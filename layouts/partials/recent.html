@@ -1,5 +1,5 @@
 {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections )}}
-<a href="{{ .Permalink }}">{{ partial "summary.html" . }}</a>
+<a href="{{ .Permalink | relURL }}">{{ partial "summary.html" . }}</a>
 {{ end }}
 
 <div class="flex flex-wrap justify-center text-gray-300 my-5">
