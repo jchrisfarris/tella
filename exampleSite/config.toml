@@ -18,6 +18,9 @@ enableRobotsTXT = true
 
 [params]
 
+  languageCode = "en"
+  locale = "en_US"
+
   mainSections = ['blog']
 
   googleFonts = true
